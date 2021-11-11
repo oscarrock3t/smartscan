@@ -7,7 +7,7 @@ if(navigator.getUserMedia!=null) {
 	navigator.getUserMedia(options, 
 		function(stream) {
 			var videoBox = document.getElementById('cam');
-			videoBox.src = stream;
+			videoBox.srcObject = stream;
 			videoBox.play();
 		},
 		function (e) {
