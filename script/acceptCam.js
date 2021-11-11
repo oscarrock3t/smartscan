@@ -1,4 +1,4 @@
-navigator.getUserMedia = navigator.mediaDevices.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 if(navigator.getUserMedia!=null) {
 	var options = {
 		video: {
