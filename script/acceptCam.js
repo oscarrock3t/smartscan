@@ -1,11 +1,8 @@
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 if(navigator.getUserMedia!=null) {
-	var options = {
-		video: {
-			facingMode: {
-				exact : "environment"
-			}
-		}
+	var options = { 
+		audio: false,
+		video: { facingMode: { exact: "environment" } } 
 	}
 
 	navigator.getUserMedia(options, 
