@@ -8,6 +8,7 @@ if(navigator.getUserMedia!=null) {
 		function(stream) {
 			var videoBox = document.getElementById('cam');
 			videoBox.src = stream;
+			videoBox.play();
 		},
 		function (e) {
 			console.error("Error! Error code: " + e.code + ". Message: " + e.message);
