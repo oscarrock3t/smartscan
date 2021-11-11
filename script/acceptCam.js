@@ -2,7 +2,9 @@ navigator.getUserMedia = navigator.mediaDevices.getUserMedia || navigator.webkit
 if(navigator.getUserMedia!=null) {
 	var options = {
 		video: {
-			facingMode: "environment"
+			facingMode: {
+				exact : "environment"
+			}
 		}
 	}
 
